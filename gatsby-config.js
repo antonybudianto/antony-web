@@ -4,6 +4,19 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
+    title: "Antony Budianto",
+    description: "Blog of Antony Budianto",
+    social: [
+      {
+        name: `twitter`,
+        url: `https://twitter.com/antonybudianto`
+      },
+      {
+        name: `github`,
+        url: `https://github.com/antonybudianto`
+      }
+    ],
+
     // Used for the title template on pages other than the index site
     siteTitle: `Antony Budianto`,
     // Default title of the page
@@ -23,9 +36,13 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
+      resolve: `gatsby-theme-blog`,
       options: {}
     },
+    // {
+    //   resolve: `@lekoarts/gatsby-theme-cara`,
+    //   options: {}
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
