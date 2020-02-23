@@ -6,7 +6,7 @@ import React, { Fragment } from "react";
 
 export default () => (
   <Fragment>
-    Software engineer, loves Open-source, Web, and Cloud
+    Software engineer, Open-source, Web, and Google Cloud Certified.
     <br />
     Enjoy your visit!
   </Fragment>
