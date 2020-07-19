@@ -8,6 +8,10 @@ body {
   font-size: 18px;
 }
 
+body {
+  transition: background-color 0.5s ease-in-out;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,16 +30,12 @@ img {
   display: block;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: white;
-  }
+body.darkmode {
+  background-color: black;
+  color: white;
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-    color: black;
-  }
+body:not(.darkmode) {
+  background-color: white;
+  color: black;
 }

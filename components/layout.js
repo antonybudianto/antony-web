@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import DarkMode from "./DarkMode/DarkMode";
 
 const name = "Antony Budianto";
 export const siteTitle = "Antony Budianto";
@@ -58,6 +59,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <DarkMode />
     </div>
   );
 }

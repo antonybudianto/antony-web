@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
@@ -8,6 +9,17 @@ import index from "./index.module.css";
 import Circle from "../components/Circle/Circle";
 
 export default function Home({ allPostsData }) {
+  useEffect(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches &&
+      !document.body.classList.contains("darkmodeinit")
+    ) {
+      document.body.classList.add("darkmodeinit");
+      document.body.classList.add("darkmode");
+    }
+  }, []);
+
   return (
     <Layout home>
       <Head>
