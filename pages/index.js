@@ -26,12 +26,20 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <Circle />
+        <Circle
+          style={{
+            backgroundColor: "skyblue",
+            top: "50%",
+            left: "15%",
+            width: 100,
+            height: 100,
+          }}
+        />
         <Circle
           style={{
             backgroundColor: "deepskyblue",
-            top: -100,
-            left: 90,
+            top: "20%",
+            left: "30%",
             width: 150,
             height: 150,
           }}
@@ -39,8 +47,8 @@ export default function Home({ allPostsData }) {
         <Circle
           style={{
             backgroundColor: "yellow",
-            top: -150,
-            left: 70,
+            top: "40%",
+            left: "50%",
             width: 60,
             height: 60,
           }}
@@ -48,8 +56,8 @@ export default function Home({ allPostsData }) {
         <Circle
           style={{
             backgroundColor: "red",
-            top: -100,
-            left: 260,
+            top: "30%",
+            left: "60%",
             width: 70,
             height: 70,
           }}
@@ -57,8 +65,8 @@ export default function Home({ allPostsData }) {
         <Circle
           style={{
             backgroundColor: "orangered",
-            top: -100,
-            left: 360,
+            top: "55%",
+            left: "70%",
             width: 100,
             height: 100,
           }}
@@ -66,8 +74,8 @@ export default function Home({ allPostsData }) {
         <Circle
           style={{
             backgroundColor: "lightgreen",
-            top: -180,
-            left: 470,
+            top: "10%",
+            left: "60%",
             width: 80,
             height: 80,
           }}

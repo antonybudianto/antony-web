@@ -10,7 +10,7 @@ function DarkMode(props) {
       style={{
         position: "fixed",
         cursor: "pointer",
-        bottom: "5%",
+        top: "5%",
         right: "5%",
         backgroundColor: "orange",
         borderRadius: "50%",
