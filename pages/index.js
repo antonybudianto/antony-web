@@ -4,6 +4,8 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import index from "./index.module.css";
+import Circle from "../components/Circle/Circle";
 
 export default function Home({ allPostsData }) {
   return (
@@ -12,6 +14,52 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <Circle />
+        <Circle
+          style={{
+            backgroundColor: "deepskyblue",
+            top: -100,
+            left: 90,
+            width: 150,
+            height: 150,
+          }}
+        />
+        <Circle
+          style={{
+            backgroundColor: "yellow",
+            top: -150,
+            left: 70,
+            width: 60,
+            height: 60,
+          }}
+        />
+        <Circle
+          style={{
+            backgroundColor: "red",
+            top: -100,
+            left: 260,
+            width: 70,
+            height: 70,
+          }}
+        />
+        <Circle
+          style={{
+            backgroundColor: "orangered",
+            top: -100,
+            left: 360,
+            width: 100,
+            height: 100,
+          }}
+        />
+        <Circle
+          style={{
+            backgroundColor: "lightgreen",
+            top: -180,
+            left: 470,
+            width: 80,
+            height: 80,
+          }}
+        />
         <p>Open-source, Web, Google Cloud Certified</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
