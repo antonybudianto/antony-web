@@ -10,7 +10,7 @@ For example, you have `www.hello.com` and want to expose endpoint for backend vi
 
 With nginx, you can do it like this:
 
-```
+```nginx
 location ~ ^/api/ {
     proxy_pass http://hellobackend/;
 }
@@ -24,7 +24,7 @@ Notice the missing `api` on proxied request? Yes, anything in the location block
 
 If you want the `api` part, you can manually add `/api` on the proxy pass, or use `$request_uri`
 
-```
+```nginx
 location ~ ^/api/ {
     proxy_pass http://hellobackend$request_uri;
 }
@@ -36,7 +36,7 @@ This will proxy to `hellobackend/api/ping`
 
 You can also use capturing group and use it to pass to proxy:
 
-```
+```nginx
 location ~ ^/api/(.*) {
     proxy_pass http://hellobackend/$1;
 }
@@ -46,7 +46,7 @@ location ~ ^/api/(.*) {
 
 ## Summary
 
-`~` -> for case-sensitive string match
+*~* -> for case-sensitive string match
 
 `hellobackend` is your backend host/IP
 
