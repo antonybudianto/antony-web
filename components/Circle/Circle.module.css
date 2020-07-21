@@ -6,7 +6,8 @@
   border-radius: 50%;
   opacity: 0.4;
   background-color: skyblue;
-  animation: glow 5s ease-in-out alternate infinite;
+  transform-origin: center;
+  animation: glow 3s ease-in-out alternate infinite;
 }
 
 @keyframes glow {
@@ -16,7 +17,7 @@
   }
 
   100% {
-    opacity: 0;
-    transform: translateY(-200%) scale(0);
+    opacity: 0.3;
+    transform: translateY(-30%) scale(0.8);
   }
 }
