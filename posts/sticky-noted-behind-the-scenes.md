@@ -1,6 +1,7 @@
 ---
 title: Behind the scenes of StickyNoted
 date: "2020-08-22"
+image: "/images/new.jpg"
 ---
 
 I've been using note-taking app like Google Keep, and enjoy it quite well until
